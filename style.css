@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: rgb(20, 109, 125);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+footer {
+    background: rgb(20, 109, 125);
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+}
+
+
+.bouton{
+    margin: 8px;
+    height: 30px;
+    background-color:rgb(235, 233, 228);
+    color: rgb(75, 74, 74);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#champReponse{
+    margin-bottom: 20px;
+    width: 255px;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+    background-color:rgb(235, 233, 228);
+    color: rgb(13, 1, 1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.container {
+    background: rgba(209, 212, 210, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form button {
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form input[type="file"] {
+    padding: 5px;
+}
+
+form button {
+    background: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background: darkcyan;
+}
+
+#playerProfile {
+    display: flex;
+    align-items: center;
+}
+
+#playerProfile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(244, 241, 241, 0.9);
+    border-radius: 5px;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.player-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+    header, main, footer {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    form input, form button {
+        width: 100%;
+    }
+}

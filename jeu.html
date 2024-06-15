@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu - Jeu de Devinette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="joueurs.html">Liste des joueurs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+         <div class="centrer">
+            <h2>Jeu de Devinette</h2>
+            <div id="playerProfile">
+                <img id="photoJoueur" src="" alt="Photo du joueur" class="player-photo">
+                <span id="nomJoueur"></span>
+            </div>
+            <p id="motCache"></p>
+            <input type="text" id="champReponse" placeholder="Entrez votre réponse">
+            <div>
+                <button id="boutonSoumettre" class="bouton"><b>Soumettre</b></button>
+                <button id="boutonPause" class="bouton"><b>Pause</b></button>
+                <button id="boutonSauvegarder" class="bouton"><b>Sauvegarder</b></button>
+            </div>
+            <p id="score">Score: 0</p>
+            <p id="tentatives">Tentatives: 0</p>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jeu de Devinette</p>
+    </footer>
+    <script src="jeu.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription - Jeu de Devinette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="joueurs.html">Liste des joueurs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Inscription</h2>
+        <form id="formInscription">
+            <input type="text" id="prenomInscription" placeholder="Prénom" required>
+            <input type="text" id="nomInscription" placeholder="Nom" required>
+            <input type="email" id="emailInscription" placeholder="E-mail" required>
+            <input type="password" id="motdepasseInscription" placeholder="Mot de passe" required>
+            <label><input type="checkbox" id="afficherMotdepasseInscription"> Afficher le mot de passe</label>
+            <input type="file" id="photoInscription" accept="image/*" required>
+            <button type="submit">S'inscrire et Commencer le Jeu</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jeu de Devinette</p>
+    </footer>
+    <script src="inscription.js"></script>
+</body>
+</html>

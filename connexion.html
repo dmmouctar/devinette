@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Jeu de Devinette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="inscription.html">Inscription</a></li>
+                <li><a href="joueurs.html">Liste des joueurs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Connexion</h2>
+        <form id="formConnexion">
+            <input type="text" id="emailConnexion" placeholder="E-mail" required>
+            <input type="password" id="motdepasseConnexion" placeholder="Mot de passe" required>
+            <label><input type="checkbox" id="afficherMotdepasse"> Afficher le mot de passe</label>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p>Pas encore de compte ? <a href="inscription.html">Inscrivez-vous ici</a></p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jeu de Devinette</p>
+    </footer>
+    <script src="connexion.js"></script>
+</body>
+</html>
